@@ -5,6 +5,9 @@ __pycache__/
 
 # data
 data/
+unsloth_compiled_cache/
+lora_te/
+wandb/
 
 # C extensions
 *.so
