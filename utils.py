@@ -85,7 +85,7 @@ def make_dataset(folder_path: str, tokenizer) -> DatasetDict:
 
     dataset_dev = to_sharegpt(
         dataset=dataset['dev'],
-        merged_prompt="### Premise: {Premise}\n ### Hypothesis {Hypothesis}",
+        merged_prompt="### Premise: {Premise}\n### Hypothesis: {Hypothesis}",
         output_column_name="Relation"
     )
     dataset_dev = standardize_sharegpt(dataset_dev)
@@ -126,11 +126,6 @@ def make_dataset(folder_path: str, tokenizer) -> DatasetDict:
     return final_dataset
 
 base_path = "/scratch/data/asif_rs/nli/data/inference_dataset/"
-# list_dir = os.listdir(base_path)
-
-# for x in tqdm(list_dir):
-#     if x.split('.')[-1] == "csv":
-#         convert_to_instruction_format(f"{base_path}{x}")
 
 data_files = {
     "train": f"{base_path}train.csv",

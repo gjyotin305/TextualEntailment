@@ -7,6 +7,7 @@ __pycache__/
 data/
 unsloth_compiled_cache/
 lora_te/
+lora_te_2/
 wandb/
 
 # C extensions
