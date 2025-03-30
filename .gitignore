@@ -12,6 +12,7 @@ wandb/
 
 # C extensions
 *.so
+*.zip
 
 # Distribution / packaging
 .Python
