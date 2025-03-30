@@ -54,6 +54,7 @@ training_args = SFTConfig(
     per_device_train_batch_size=16,
     gradient_accumulation_steps=4,
     warmup_steps=5,
+    neftune_noise_alpha=5,
     num_train_epochs=1,
     # max_steps=60,
     learning_rate=2e-4,
@@ -76,5 +77,5 @@ trainer = SFTTrainer(
 
 trainer.train()
 
-model.save_pretrained('lora_te')
-tokenizer.save_pretrained('lora_te')
+model.save_pretrained('lora_te_2')
+tokenizer.save_pretrained('lora_te_2')
