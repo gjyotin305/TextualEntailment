@@ -1,6 +1,25 @@
 # TextualEntailment
-TextualEntailment
 
+## Task and Setup:
+This repository implements a Textual Entailment model, determining if a hypothesis logically follows from a given premise.
+
+### Hugging Face Finetuned Models
+- [LoRA Adapter](https://huggingface.co/gjyotin305/TextualEntailment-LoRA)
+- [GGUF f16](https://huggingface.co/gjyotin305/TextualEntailment-Llama)
+
+### Setup:
+These models were trained on a proprietary Textual Entailment Dataset.
+
+The Prompt Template to use is given below:
+```bash
+### Premise: <premise>
+### Hypothesis: <hypothesis>
+```
+
+Response format:
+```bash
+### Response <response>
+```
 
 ## Instructions to run:
 
